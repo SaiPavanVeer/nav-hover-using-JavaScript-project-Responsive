@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: #112d4e;
+}
+/* NavBar */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  list-style: none;
+}
+.navbar li a {
+  text-decoration: none;
+  color: #3f72af;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.navbar li a:hover {
+  color: #dbe2ef;
+}
+/* Inner Content of the Nav Bar */
+.general,
+.popular {
+  display: flex;
+  gap: 5rem;
+  padding: 0px 10rem;
+}
+.general1,
+.general2,
+.popular1,
+.popular2 {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 2rem;
+}
+.market {
+  display: flex;
+  margin-top: 2rem;
+  /* visibility: hidden;
+  opacity: 0; */
+  height: 35vh;
+  border: 3px solid white;
+}
+.markets {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+.general2 li,
+.popular2 li {
+  list-style: none;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  color: white;
+}
+.general1 a,
+.general2 a,
+.popular1 a,
+.popular2 a {
+  text-decoration: none;
+  color: white;
+  line-height: 1rem;
+  margin-top: 2rem;
+}
+.popular1,
+.general1 {
+  margin-top: 4rem;
+}
+.popular :hover {
+  color: #bad7df;
+}
+.general :hover {
+  color: #bad7df;
+}
+/* Menu */
+.hamburger div {
+  width: 25px;
+  height: 5px;
+  background-color: #bad7df;
+  margin: 5px;
+}
+.hamburger {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 3rem;
+    left: 2rem;
+    cursor: pointer;
+  }
+  .hamburger :hover {
+    background-color: #112d4e;
+  }
+  .navbar {
+    display: block;
+    text-align: center;
+    line-height: 3rem;
+    margin: 7rem 0rem 0rem 2.3rem;
+    transform: translateX(-700px);
+  }
+  .navbar li {
+    background-color: #112d4e;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 10rem;
+    height: 3rem;
+    margin-top: 1rem;
+  }
+  .navbar li a {
+    background-color: #112d4e;
+    color: #dbe2ef;
+    font-size: 15px;
+  }
+  .gene {
+    transform: translateX(0px);
+    transition: 0.5s ease-in-out;
+  }
+  .general,
+  .popular {
+    display: block;
+    padding: 0px 0rem;
+  }
+  .popular1,
+  .general1 {
+    margin-top: 0px;
+  }
+  .general1 a,
+  .general2 a,
+  .popular1 a,
+  .popular2 a {
+    line-height: 1.5rem;
+    margin-top: 0px;
+    font-size: 15px;
+    padding-left: 2rem;
+  }
+  .general2 li,
+  .popular2 li {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1rem 0rem 5px 0px;
+    padding-left: 2rem;
+  }
+  .market {
+    height: 27vh;
+    width: 21rem;
+    border: 3px solid white;
+    position: absolute;
+    top: 6rem;
+    left: 15rem;
+  }
+  .general1,
+  .general2,
+  .popular1,
+  .popular2 {
+    padding: 0px;
+  }
+}
